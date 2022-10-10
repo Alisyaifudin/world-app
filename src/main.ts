@@ -1,13 +1,12 @@
-import {
-	Scene,
-	PerspectiveCamera,
-	WebGLRenderer,
-	BoxGeometry,
-	Color,
-	Mesh,
-	MeshBasicMaterial,
-} from "three";
+import { World } from "./World/World";
 
-const container = document.getElementById("scene-container");
-if(!container) throw Error("Container not found");
+function main(){
+	const container = document.getElementById("scene-container");
+	if(!container) throw Error("No element with id 'scene-container' found");
+	
+	const world = new World(container);
+	
+	world.render();
+}
 
+main();
