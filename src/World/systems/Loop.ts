@@ -1,6 +1,4 @@
 import { Clock, PerspectiveCamera, Scene, WebGLRenderer } from "three";
-import { Object } from "../global";
-
 const clock = new Clock();
 
 class Loop {
